@@ -16,13 +16,16 @@ APPLY TAB:
 -nothing needed to be changed (to my understanding)
 
 ENROLLMENT TAB:
-
+- same as previous forms tab
+- a link to enroll in bear tracks
 
 CURRICULUM TAB:
-
+- same as previous classrooms tag
+- added years at WUNS to teacher bios
 
 HOME TAB:
-
+- not really sure what to put here
 
 SCHEDULE TAB:
+- made a new page for this but none of the content yet
 
