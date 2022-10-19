@@ -1,1 +1,32 @@
 @import url("common.css");
+
+table {
+    border-collapse: collapse;
+    border: none !important;
+    width: 90%;
+    margin: 20px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.column-one {
+    text-align: left;
+    width: 35%;
+}
+
+.row-odd {
+    background-color: #f1f1f1;
+}
+
+.row-even {
+    background-color: #fff;
+}
