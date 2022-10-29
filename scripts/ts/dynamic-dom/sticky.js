@@ -1,6 +1,7 @@
 export function setupSticky() {
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {setupSticky()};
+    document.getElementById('mturk-top-banner-arrow').addEventListener('click', setupSticky)
 
     // Get the header
     var header = document.getElementById('main-menu-container');
@@ -23,6 +24,7 @@ export function setupSticky() {
     function setupSticky() {
     console.log(drop_down_btn.classList[2]);
     if (drop_down_btn.classList[2] == 'none') {
+        console.log('sticky2')
         header.classList.add("sticky2");
     } else {
         header.classList.remove("sticky2");
