@@ -14,7 +14,10 @@ export function setupSticky() {
     // sticky to the drop down bar
     var drop_down_btn = document.getElementById('mturk-top-banner-drop-down-button');
 
-//    console.log(drop_down_btn.classList[2]);
+   console.log(drop_down_btn.classList[2]);
+    if (drop_down_btn.classList[2] == 'none') {
+        header.classList.add("sticky2");
+    }
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function setupSticky() {
