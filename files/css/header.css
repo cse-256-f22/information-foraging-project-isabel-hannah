@@ -11,15 +11,22 @@ header {
 }
 
 #main-menu-container {
+    /* margin-top: 175px; */
     width: 100%;
     background-color: #3d3d3d;
 }
 
 .sticky {
+    margin-top: 40px;
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 40px;
+}
+.sticky2 {
+    margin-top: 360px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .container {
