@@ -15,9 +15,16 @@ export function setupSticky() {
     // sticky to the drop down bar
     var drop_down_btn = document.getElementById('mturk-top-banner-drop-down-button');
 
-   console.log(drop_down_btn.classList[2]);
+    let dropdown_top = document.getElementById("mturk-top-banner");
+    let dropdown = document.getElementById("mturk-top-banner-drop-down-content");
+    let offset = dropdown.offsetHeight + dropdown_top.offsetHeight
+    console.log(offset)
+
+    console.log(drop_down_btn.classList[2]);
     if (drop_down_btn.classList[2] == 'none') {
         header.classList.add("sticky2");
+        header.style.marginTop = offset + "px";
+
     }
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
@@ -26,8 +33,10 @@ export function setupSticky() {
     if (drop_down_btn.classList[2] == 'none') {
         console.log('sticky2')
         header.classList.add("sticky2");
+        header.style.marginTop = offset + "px";
     } else {
         header.classList.remove("sticky2");
+        header.style.marginTop = "";
     }
 
     if (window.pageYOffset > sticky) {
